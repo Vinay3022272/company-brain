@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-15T15:05:49.388751+00:00",
+  "batches": {
+    "batch_20261015_150549_9ab38c83": {
+      "timestamp": "2026-10-15T15:05:49.388491+00:00",
+      "stats": {
+        "batch_id": "batch_20261015_150549_9ab38c83",
+        "total_files": 2,
+        "total_canonical_entities": 52,
+        "total_relationships": 0,
+        "total_chunks": 3,
+        "added": 52,
+        "updated": 0,
+        "unchanged": 0,
+        "quarantined": 0
+      },
+      "errors": [],
+      "target_files": [
+        "departments.csv",
+        "teams.csv"
+      ]
+    }
+  },
+  "entity_hashes": {
+    "DEPT-ENG": "64773914a0c7c31f",
+    "DEPT-PROD": "d11cbc4fe62921b0",
+    "DEPT-DATA": "9445dad2d5af98c5",
+    "DEPT-DESIGN": "ee43309b9fe87755",
+    "DEPT-SALES": "8104a99d1c8c3ad8",
+    "DEPT-MKT": "ca9b7bc1c200419b",
+    "DEPT-CS": "eed4d418b29a185e",
+    "DEPT-SUPPORT": "0734d09842bd3104",
+    "DEPT-OPS": "e42f3ff95f3475a4",
+    "DEPT-PEOPLE": "52e0bdd494b38efb",
+    "DEPT-FIN": "b7f1651f12206a51",
+    "DEPT-SEC": "01bb4bcf97ef8caa",
+    "TEAM-ENG-PLAT": "0f32073819e6251d",
+    "TEAM-ENG-WEB": "65f84c695c9b2114",
+    "TEAM-ENG-BILL": "eb5a90d9e6e9fbaa",
+    "TEAM-ENG-INT": "d03382ddd5b3161f",
+    "TEAM-ENG-QA": "f473e9ed411ba698",
+    "TEAM-ENG-SRE": "c18c3a3d66e7b643",
+    "TEAM-PROD-CORE": "67cd111bfeadbc88",
+    "TEAM-PROD-GROW": "a1ace3cad2df1ee1",
+    "TEAM-DATA-AN": "692eb69190b9f123",
+    "TEAM-DATA-ML": "7e42d9f21d8588d9",
+    "TEAM-DESIGN-UX": "5f9c3e4443c0f594",
+    "TEAM-SALES-ENT": "1cddc95cc3071a1a",
+    "TEAM-SALES-MID": "200a8e7712bdba2f",
+    "TEAM-MKT-CONT": "412df50cafd12d69",
+    "TEAM-MKT-DEMAND": "4281209ac7d9e318",
+    "TEAM-CS-ONB": "647b6d07f5127855",
+    "TEAM-CS-ACC": "ea5f5a1238ce38ad",
+    "TEAM-SUP-L1": "9b3089c2a2a2ea4c",
+    "TEAM-SUP-TECH": "a127e9fd8aa5851b",
+    "TEAM-OPS-BIZ": "55c85d019b035270",
+    "TEAM-OPS-PMO": "97723c138b1992ed",
+    "TEAM-PEOPLE-REC": "868949ff49b72cfe",
+    "TEAM-PEOPLE-DEV": "3b0855dad62443dd",
+    "TEAM-FIN-PLAN": "6be5d97adfa65d6e",
+    "TEAM-FIN-LEGAL": "6ca4ae092471bfc3",
+    "TEAM-SEC-APP": "84aff5e1aa8098ef",
+    "TEAM-SEC-IT": "8ec390676524b52a",
+    "TEAM-ENG-MOB": "ab01496f16c5cf43",
+    "TEAM-PROD-PLAT": "a51a9f55ac512279",
+    "TEAM-DATA-GOV": "0b04720c641333fb",
+    "TEAM-SALES-OPS": "362e62f171ceb8d0",
+    "TEAM-MKT-PROD": "8f669c2f892eb049",
+    "TEAM-CS-EDU": "fd4e4404e85e8fd4",
+    "TEAM-SUP-TOOLS": "4f64d0c9e70d16ce",
+    "TEAM-OPS-AN": "31adef015e330480",
+    "TEAM-PEOPLE-OPS": "24b9ef839a82701f",
+    "TEAM-FIN-REV": "ea78c2bcc572ad53",
+    "TEAM-SEC-GRC": "3956d4a369340b1d",
+    "TEAM-ENG-DATA": "d5211450e863ce54",
+    "TEAM-PROD-INT": "e63a0f64495f407a"
+  },
+  "entity_snapshots": {
+    "DEPT-ENG": {
+      "department_id": "DEPT-ENG",
+      "department_name": "Engineering",
+      "mission": "Build and operate reliable product software",
+      "head_employee_id": "EMP-0001",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-PROD": {
+      "department_id": "DEPT-PROD",
+      "department_name": "Product",
+      "mission": "Define customer problems, roadmap, and product outcomes",
+      "head_employee_id": "EMP-0002",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-DATA": {
+      "department_id": "DEPT-DATA",
+      "department_name": "Data & AI",
+      "mission": "Build analytics, ML, and AI-powered capabilities",
+      "head_employee_id": "EMP-0003",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-DESIGN": {
+      "department_id": "DEPT-DESIGN",
+      "department_name": "Design & Research",
+      "mission": "Create accessible, usable product experiences",
+      "head_employee_id": "EMP-0004",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-SALES": {
+      "department_id": "DEPT-SALES",
+      "department_name": "Sales",
+      "mission": "Acquire customers and manage the sales pipeline",
+      "head_employee_id": "EMP-0005",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-MKT": {
+      "department_id": "DEPT-MKT",
+      "department_name": "Marketing",
+      "mission": "Position the product and generate qualified demand",
+      "head_employee_id": "EMP-0006",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-CS": {
+      "department_id": "DEPT-CS",
+      "department_name": "Customer Success",
+      "mission": "Drive adoption, retention, and customer outcomes",
+      "head_employee_id": "EMP-0007",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-SUPPORT": {
+      "department_id": "DEPT-SUPPORT",
+      "department_name": "Customer Support",
+      "mission": "Resolve customer questions and product issues",
+      "head_employee_id": "EMP-0008",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-OPS": {
+      "department_id": "DEPT-OPS",
+      "department_name": "Business Operations",
+      "mission": "Improve internal processes and operating cadence",
+      "head_employee_id": "EMP-0009",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-PEOPLE": {
+      "department_id": "DEPT-PEOPLE",
+      "department_name": "People & Talent",
+      "mission": "Recruit, develop, and support employees",
+      "head_employee_id": "EMP-0010",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-FIN": {
+      "department_id": "DEPT-FIN",
+      "department_name": "Finance & Legal",
+      "mission": "Manage finance, contracts, and compliance",
+      "head_employee_id": "EMP-0011",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "DEPT-SEC": {
+      "department_id": "DEPT-SEC",
+      "department_name": "Security & IT",
+      "mission": "Protect company systems, access, and data",
+      "head_employee_id": "EMP-0012",
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-PLAT": {
+      "team_id": "TEAM-ENG-PLAT",
+      "team_name": "Platform Engineering",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0097",
+      "mission": "Core services, APIs, infrastructure",
+      "primary_tools": [
+        "Looker",
+        "Slack",
+        "GitHub"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-WEB": {
+      "team_id": "TEAM-ENG-WEB",
+      "team_name": "Web Application",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0013",
+      "mission": "Customer-facing web application",
+      "primary_tools": [
+        "Terraform",
+        "Datadog",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-BILL": {
+      "team_id": "TEAM-ENG-BILL",
+      "team_name": "Billing Engineering",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0025",
+      "mission": "Plans, invoices, payments, entitlements",
+      "primary_tools": [
+        "Notion",
+        "Linear",
+        "Terraform"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-INT": {
+      "team_id": "TEAM-ENG-INT",
+      "team_name": "Integrations Engineering",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0037",
+      "mission": "Third-party and customer integrations",
+      "primary_tools": [
+        "Slack",
+        "Looker",
+        "Terraform"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-QA": {
+      "team_id": "TEAM-ENG-QA",
+      "team_name": "Quality Engineering",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0049",
+      "mission": "Automation, release quality, test strategy",
+      "primary_tools": [
+        "Zendesk",
+        "Salesforce",
+        "Slack"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-SRE": {
+      "team_id": "TEAM-ENG-SRE",
+      "team_name": "Site Reliability",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0061",
+      "mission": "Availability, observability, incident response",
+      "primary_tools": [
+        "HubSpot",
+        "Snowflake",
+        "GitHub"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PROD-CORE": {
+      "team_id": "TEAM-PROD-CORE",
+      "team_name": "Core Product",
+      "department_id": "DEPT-PROD",
+      "manager_employee_id": "EMP-0050",
+      "mission": "Roadmap and core workflows",
+      "primary_tools": [
+        "GitHub",
+        "Slack",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PROD-GROW": {
+      "team_id": "TEAM-PROD-GROW",
+      "team_name": "Growth Product",
+      "department_id": "DEPT-PROD",
+      "manager_employee_id": "EMP-0014",
+      "mission": "Activation, onboarding, expansion",
+      "primary_tools": [
+        "Notion",
+        "Salesforce",
+        "HubSpot"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-DATA-AN": {
+      "team_id": "TEAM-DATA-AN",
+      "team_name": "Analytics Engineering",
+      "department_id": "DEPT-DATA",
+      "manager_employee_id": "EMP-0003",
+      "mission": "Metrics, data models, reporting",
+      "primary_tools": [
+        "GitHub",
+        "Salesforce",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-DATA-ML": {
+      "team_id": "TEAM-DATA-ML",
+      "team_name": "Applied AI",
+      "department_id": "DEPT-DATA",
+      "manager_employee_id": "EMP-0015",
+      "mission": "Recommendations, assistants, ML services",
+      "primary_tools": [
+        "Terraform",
+        "Looker",
+        "Zendesk"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-DESIGN-UX": {
+      "team_id": "TEAM-DESIGN-UX",
+      "team_name": "Product Design",
+      "department_id": "DEPT-DESIGN",
+      "manager_employee_id": "EMP-0004",
+      "mission": "UX, design systems, user research",
+      "primary_tools": [
+        "Salesforce",
+        "Snowflake",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SALES-ENT": {
+      "team_id": "TEAM-SALES-ENT",
+      "team_name": "Enterprise Sales",
+      "department_id": "DEPT-SALES",
+      "manager_employee_id": "EMP-0185",
+      "mission": "Large-account acquisition",
+      "primary_tools": [
+        "Figma",
+        "HubSpot",
+        "Datadog"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SALES-MID": {
+      "team_id": "TEAM-SALES-MID",
+      "team_name": "Mid-Market Sales",
+      "department_id": "DEPT-SALES",
+      "manager_employee_id": "EMP-0017",
+      "mission": "Mid-market acquisition",
+      "primary_tools": [
+        "Kubernetes",
+        "Okta",
+        "GitHub"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-MKT-CONT": {
+      "team_id": "TEAM-MKT-CONT",
+      "team_name": "Content & Brand",
+      "department_id": "DEPT-MKT",
+      "manager_employee_id": "EMP-0078",
+      "mission": "Content, brand, thought leadership",
+      "primary_tools": [
+        "Kubernetes",
+        "Zendesk",
+        "Linear"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-MKT-DEMAND": {
+      "team_id": "TEAM-MKT-DEMAND",
+      "team_name": "Demand Generation",
+      "department_id": "DEPT-MKT",
+      "manager_employee_id": "EMP-0018",
+      "mission": "Campaigns, events, pipeline",
+      "primary_tools": [
+        "Terraform",
+        "Snowflake",
+        "PostgreSQL"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-CS-ONB": {
+      "team_id": "TEAM-CS-ONB",
+      "team_name": "Customer Onboarding",
+      "department_id": "DEPT-CS",
+      "manager_employee_id": "EMP-0079",
+      "mission": "Implementation and onboarding",
+      "primary_tools": [
+        "Datadog",
+        "Linear",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-CS-ACC": {
+      "team_id": "TEAM-CS-ACC",
+      "team_name": "Account Management",
+      "department_id": "DEPT-CS",
+      "manager_employee_id": "EMP-0019",
+      "mission": "Renewals, adoption, account plans",
+      "primary_tools": [
+        "Kubernetes",
+        "PostgreSQL",
+        "Slack"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SUP-L1": {
+      "team_id": "TEAM-SUP-L1",
+      "team_name": "Support Operations",
+      "department_id": "DEPT-SUPPORT",
+      "manager_employee_id": "EMP-0008",
+      "mission": "First-line customer issue resolution",
+      "primary_tools": [
+        "Slack",
+        "Snowflake",
+        "Zendesk"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SUP-TECH": {
+      "team_id": "TEAM-SUP-TECH",
+      "team_name": "Technical Support",
+      "department_id": "DEPT-SUPPORT",
+      "manager_employee_id": "EMP-0020",
+      "mission": "Complex product and integration cases",
+      "primary_tools": [
+        "PostgreSQL",
+        "Okta",
+        "Zendesk"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-OPS-BIZ": {
+      "team_id": "TEAM-OPS-BIZ",
+      "team_name": "Business Systems",
+      "department_id": "DEPT-OPS",
+      "manager_employee_id": "EMP-0117",
+      "mission": "Internal tools and workflows",
+      "primary_tools": [
+        "HubSpot",
+        "Datadog",
+        "Kubernetes"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-OPS-PMO": {
+      "team_id": "TEAM-OPS-PMO",
+      "team_name": "Program Management",
+      "department_id": "DEPT-OPS",
+      "manager_employee_id": "EMP-0021",
+      "mission": "Cross-functional delivery",
+      "primary_tools": [
+        "GitHub",
+        "Terraform",
+        "Figma"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PEOPLE-REC": {
+      "team_id": "TEAM-PEOPLE-REC",
+      "team_name": "Talent Acquisition",
+      "department_id": "DEPT-PEOPLE",
+      "manager_employee_id": "EMP-0010",
+      "mission": "Hiring and candidate experience",
+      "primary_tools": [
+        "Salesforce",
+        "Slack",
+        "Snowflake"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PEOPLE-DEV": {
+      "team_id": "TEAM-PEOPLE-DEV",
+      "team_name": "People Development",
+      "department_id": "DEPT-PEOPLE",
+      "manager_employee_id": "EMP-0022",
+      "mission": "Learning, performance, employee experience",
+      "primary_tools": [
+        "Slack",
+        "Salesforce",
+        "Datadog"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-FIN-PLAN": {
+      "team_id": "TEAM-FIN-PLAN",
+      "team_name": "Finance & Planning",
+      "department_id": "DEPT-FIN",
+      "manager_employee_id": "EMP-0227",
+      "mission": "Budgeting, forecasting, reporting",
+      "primary_tools": [
+        "Okta",
+        "Looker",
+        "HubSpot"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-FIN-LEGAL": {
+      "team_id": "TEAM-FIN-LEGAL",
+      "team_name": "Legal & Contracts",
+      "department_id": "DEPT-FIN",
+      "manager_employee_id": "EMP-0023",
+      "mission": "Commercial contracts and legal review",
+      "primary_tools": [
+        "Zendesk",
+        "Okta",
+        "PostgreSQL"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SEC-APP": {
+      "team_id": "TEAM-SEC-APP",
+      "team_name": "Application Security",
+      "department_id": "DEPT-SEC",
+      "manager_employee_id": "EMP-0336",
+      "mission": "Secure development and risk assessment",
+      "primary_tools": [
+        "HubSpot",
+        "Notion",
+        "Terraform"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SEC-IT": {
+      "team_id": "TEAM-SEC-IT",
+      "team_name": "IT & Identity",
+      "department_id": "DEPT-SEC",
+      "manager_employee_id": "EMP-0024",
+      "mission": "Identity, endpoints, internal access",
+      "primary_tools": [
+        "Slack",
+        "GitHub",
+        "Looker"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-MOB": {
+      "team_id": "TEAM-ENG-MOB",
+      "team_name": "Developer Experience",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0073",
+      "mission": "Build systems, SDKs, developer tooling",
+      "primary_tools": [
+        "Notion",
+        "Kubernetes",
+        "Datadog"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PROD-PLAT": {
+      "team_id": "TEAM-PROD-PLAT",
+      "team_name": "Platform Product",
+      "department_id": "DEPT-PROD",
+      "manager_employee_id": "EMP-0026",
+      "mission": "Platform roadmap and developer workflows",
+      "primary_tools": [
+        "Slack",
+        "Okta",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-DATA-GOV": {
+      "team_id": "TEAM-DATA-GOV",
+      "team_name": "Data Governance",
+      "department_id": "DEPT-DATA",
+      "manager_employee_id": "EMP-0027",
+      "mission": "Data quality, access, lineage",
+      "primary_tools": [
+        "Okta",
+        "Slack",
+        "Snowflake"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SALES-OPS": {
+      "team_id": "TEAM-SALES-OPS",
+      "team_name": "Sales Operations",
+      "department_id": "DEPT-SALES",
+      "manager_employee_id": "EMP-0029",
+      "mission": "CRM quality, forecasting, sales process",
+      "primary_tools": [
+        "Datadog",
+        "Figma",
+        "Looker"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-MKT-PROD": {
+      "team_id": "TEAM-MKT-PROD",
+      "team_name": "Product Marketing",
+      "department_id": "DEPT-MKT",
+      "manager_employee_id": "EMP-0030",
+      "mission": "Positioning, launches, enablement",
+      "primary_tools": [
+        "Okta",
+        "PostgreSQL",
+        "Linear"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-CS-EDU": {
+      "team_id": "TEAM-CS-EDU",
+      "team_name": "Customer Education",
+      "department_id": "DEPT-CS",
+      "manager_employee_id": "EMP-0031",
+      "mission": "Guides, webinars, self-service learning",
+      "primary_tools": [
+        "PostgreSQL",
+        "Zendesk",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SUP-TOOLS": {
+      "team_id": "TEAM-SUP-TOOLS",
+      "team_name": "Support Tools",
+      "department_id": "DEPT-SUPPORT",
+      "manager_employee_id": "EMP-0032",
+      "mission": "Support automation and knowledge base",
+      "primary_tools": [
+        "Looker",
+        "Datadog",
+        "Terraform"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-OPS-AN": {
+      "team_id": "TEAM-OPS-AN",
+      "team_name": "Operations Analytics",
+      "department_id": "DEPT-OPS",
+      "manager_employee_id": "EMP-0033",
+      "mission": "Operational metrics and analysis",
+      "primary_tools": [
+        "Zendesk",
+        "Looker",
+        "Okta"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PEOPLE-OPS": {
+      "team_id": "TEAM-PEOPLE-OPS",
+      "team_name": "People Operations",
+      "department_id": "DEPT-PEOPLE",
+      "manager_employee_id": "EMP-0034",
+      "mission": "People processes and HR systems",
+      "primary_tools": [
+        "Slack",
+        "HubSpot",
+        "Looker"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-FIN-REV": {
+      "team_id": "TEAM-FIN-REV",
+      "team_name": "Revenue Operations Finance",
+      "department_id": "DEPT-FIN",
+      "manager_employee_id": "EMP-0035",
+      "mission": "Revenue recognition and billing controls",
+      "primary_tools": [
+        "Linear",
+        "Salesforce",
+        "Terraform"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-SEC-GRC": {
+      "team_id": "TEAM-SEC-GRC",
+      "team_name": "Governance & Compliance",
+      "department_id": "DEPT-SEC",
+      "manager_employee_id": "EMP-0036",
+      "mission": "Policies, audits, compliance controls",
+      "primary_tools": [
+        "Notion",
+        "Linear",
+        "Figma"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-ENG-DATA": {
+      "team_id": "TEAM-ENG-DATA",
+      "team_name": "Data Platform Engineering",
+      "department_id": "DEPT-ENG",
+      "manager_employee_id": "EMP-0085",
+      "mission": "Pipelines, event infrastructure, data APIs",
+      "primary_tools": [
+        "Snowflake",
+        "Datadog",
+        "Looker"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    },
+    "TEAM-PROD-INT": {
+      "team_id": "TEAM-PROD-INT",
+      "team_name": "Integrations Product",
+      "department_id": "DEPT-PROD",
+      "manager_employee_id": "EMP-0038",
+      "mission": "Integration ecosystem and partner workflows",
+      "primary_tools": [
+        "Terraform",
+        "Salesforce",
+        "Notion"
+      ],
+      "created_at": "2025-01-01T09:00:00Z"
+    }
+  },
+  "unresolved_foreign_keys": {},
+  "quarantined_records": [],
+  "processed_file_checksums": {}
+}

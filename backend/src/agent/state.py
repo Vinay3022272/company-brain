@@ -56,7 +56,8 @@ class WikiState(TypedDict, total=False):
     Complete state passed between nodes in the Company Brain LangGraph pipeline.
     All list and dict fields used in parallel branches have reducer annotations.
     """
-    # Ingestion Configuration
+    # Batch Tracking & Checkpoints
+    batch_id: Annotated[str, take_latest]
     chunk_size: int
     data_dir: Optional[str]
     max_workers: int
@@ -66,6 +67,11 @@ class WikiState(TypedDict, total=False):
     previous_hashes: Dict[str, str]
     current_hashes: Annotated[Dict[str, str], merge_dicts]
     changed_entities: Dict[str, List[str]]  # {"added": [...], "updated": [...], "unchanged": [...]}
+    quarantined_records: Annotated[List[Dict[str, Any]], operator.add]
+    
+    # Foreign Key Resolution Queues
+    unresolved_foreign_keys: Annotated[Dict[str, Any], merge_dicts]
+    now_resolved_foreign_keys: Annotated[Dict[str, Any], merge_dicts]
 
     # Ingested Canonical Records and Edges
     canonical_records: Annotated[Dict[str, List[Dict[str, Any]]], merge_canonical_records]
@@ -89,9 +95,11 @@ def create_initial_wiki_state(
     previous_hashes: Optional[Dict[str, str]] = None,
     max_workers: int = 4,
     data_dir: Optional[str] = None,
+    batch_id: Optional[str] = None,
 ) -> WikiState:
     """Helper to initialize an empty WikiState with defaults."""
     return {
+        "batch_id": batch_id or "",
         "chunk_size": chunk_size,
         "data_dir": data_dir,
         "max_workers": max_workers,
@@ -99,6 +107,9 @@ def create_initial_wiki_state(
         "previous_hashes": previous_hashes or {},
         "current_hashes": {},
         "changed_entities": {"added": [], "updated": [], "unchanged": []},
+        "quarantined_records": [],
+        "unresolved_foreign_keys": {},
+        "now_resolved_foreign_keys": {},
         "canonical_records": {},
         "relationships_records": [],
         "branch_status": {},
