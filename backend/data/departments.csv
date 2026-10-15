@@ -1,0 +1,13 @@
+department_id,department_name,mission,head_employee_id,created_at
+DEPT-ENG,Engineering,Build and operate reliable product software,EMP-0001,2025-01-01T09:00:00Z
+DEPT-PROD,Product,"Define customer problems, roadmap, and product outcomes",EMP-0002,2025-01-01T09:00:00Z
+DEPT-DATA,Data & AI,"Build analytics, ML, and AI-powered capabilities",EMP-0003,2025-01-01T09:00:00Z
+DEPT-DESIGN,Design & Research,"Create accessible, usable product experiences",EMP-0004,2025-01-01T09:00:00Z
+DEPT-SALES,Sales,Acquire customers and manage the sales pipeline,EMP-0005,2025-01-01T09:00:00Z
+DEPT-MKT,Marketing,Position the product and generate qualified demand,EMP-0006,2025-01-01T09:00:00Z
+DEPT-CS,Customer Success,"Drive adoption, retention, and customer outcomes",EMP-0007,2025-01-01T09:00:00Z
+DEPT-SUPPORT,Customer Support,Resolve customer questions and product issues,EMP-0008,2025-01-01T09:00:00Z
+DEPT-OPS,Business Operations,Improve internal processes and operating cadence,EMP-0009,2025-01-01T09:00:00Z
+DEPT-PEOPLE,People & Talent,"Recruit, develop, and support employees",EMP-0010,2025-01-01T09:00:00Z
+DEPT-FIN,Finance & Legal,"Manage finance, contracts, and compliance",EMP-0011,2025-01-01T09:00:00Z
+DEPT-SEC,Security & IT,"Protect company systems, access, and data",EMP-0012,2025-01-01T09:00:00Z

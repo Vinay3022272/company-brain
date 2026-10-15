@@ -1,0 +1,41 @@
+team_id,team_name,department_id,manager_employee_id,mission,primary_tools,created_at
+TEAM-ENG-PLAT,Platform Engineering,DEPT-ENG,EMP-0097,"Core services, APIs, infrastructure","[""Looker"", ""Slack"", ""GitHub""]",2025-01-01T09:00:00Z
+TEAM-ENG-WEB,Web Application,DEPT-ENG,EMP-0013,Customer-facing web application,"[""Terraform"", ""Datadog"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-ENG-BILL,Billing Engineering,DEPT-ENG,EMP-0025,"Plans, invoices, payments, entitlements","[""Notion"", ""Linear"", ""Terraform""]",2025-01-01T09:00:00Z
+TEAM-ENG-INT,Integrations Engineering,DEPT-ENG,EMP-0037,Third-party and customer integrations,"[""Slack"", ""Looker"", ""Terraform""]",2025-01-01T09:00:00Z
+TEAM-ENG-QA,Quality Engineering,DEPT-ENG,EMP-0049,"Automation, release quality, test strategy","[""Zendesk"", ""Salesforce"", ""Slack""]",2025-01-01T09:00:00Z
+TEAM-ENG-SRE,Site Reliability,DEPT-ENG,EMP-0061,"Availability, observability, incident response","[""HubSpot"", ""Snowflake"", ""GitHub""]",2025-01-01T09:00:00Z
+TEAM-PROD-CORE,Core Product,DEPT-PROD,EMP-0050,Roadmap and core workflows,"[""GitHub"", ""Slack"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-PROD-GROW,Growth Product,DEPT-PROD,EMP-0014,"Activation, onboarding, expansion","[""Notion"", ""Salesforce"", ""HubSpot""]",2025-01-01T09:00:00Z
+TEAM-DATA-AN,Analytics Engineering,DEPT-DATA,EMP-0003,"Metrics, data models, reporting","[""GitHub"", ""Salesforce"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-DATA-ML,Applied AI,DEPT-DATA,EMP-0015,"Recommendations, assistants, ML services","[""Terraform"", ""Looker"", ""Zendesk""]",2025-01-01T09:00:00Z
+TEAM-DESIGN-UX,Product Design,DEPT-DESIGN,EMP-0004,"UX, design systems, user research","[""Salesforce"", ""Snowflake"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-SALES-ENT,Enterprise Sales,DEPT-SALES,EMP-0185,Large-account acquisition,"[""Figma"", ""HubSpot"", ""Datadog""]",2025-01-01T09:00:00Z
+TEAM-SALES-MID,Mid-Market Sales,DEPT-SALES,EMP-0017,Mid-market acquisition,"[""Kubernetes"", ""Okta"", ""GitHub""]",2025-01-01T09:00:00Z
+TEAM-MKT-CONT,Content & Brand,DEPT-MKT,EMP-0078,"Content, brand, thought leadership","[""Kubernetes"", ""Zendesk"", ""Linear""]",2025-01-01T09:00:00Z
+TEAM-MKT-DEMAND,Demand Generation,DEPT-MKT,EMP-0018,"Campaigns, events, pipeline","[""Terraform"", ""Snowflake"", ""PostgreSQL""]",2025-01-01T09:00:00Z
+TEAM-CS-ONB,Customer Onboarding,DEPT-CS,EMP-0079,Implementation and onboarding,"[""Datadog"", ""Linear"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-CS-ACC,Account Management,DEPT-CS,EMP-0019,"Renewals, adoption, account plans","[""Kubernetes"", ""PostgreSQL"", ""Slack""]",2025-01-01T09:00:00Z
+TEAM-SUP-L1,Support Operations,DEPT-SUPPORT,EMP-0008,First-line customer issue resolution,"[""Slack"", ""Snowflake"", ""Zendesk""]",2025-01-01T09:00:00Z
+TEAM-SUP-TECH,Technical Support,DEPT-SUPPORT,EMP-0020,Complex product and integration cases,"[""PostgreSQL"", ""Okta"", ""Zendesk""]",2025-01-01T09:00:00Z
+TEAM-OPS-BIZ,Business Systems,DEPT-OPS,EMP-0117,Internal tools and workflows,"[""HubSpot"", ""Datadog"", ""Kubernetes""]",2025-01-01T09:00:00Z
+TEAM-OPS-PMO,Program Management,DEPT-OPS,EMP-0021,Cross-functional delivery,"[""GitHub"", ""Terraform"", ""Figma""]",2025-01-01T09:00:00Z
+TEAM-PEOPLE-REC,Talent Acquisition,DEPT-PEOPLE,EMP-0010,Hiring and candidate experience,"[""Salesforce"", ""Slack"", ""Snowflake""]",2025-01-01T09:00:00Z
+TEAM-PEOPLE-DEV,People Development,DEPT-PEOPLE,EMP-0022,"Learning, performance, employee experience","[""Slack"", ""Salesforce"", ""Datadog""]",2025-01-01T09:00:00Z
+TEAM-FIN-PLAN,Finance & Planning,DEPT-FIN,EMP-0227,"Budgeting, forecasting, reporting","[""Okta"", ""Looker"", ""HubSpot""]",2025-01-01T09:00:00Z
+TEAM-FIN-LEGAL,Legal & Contracts,DEPT-FIN,EMP-0023,Commercial contracts and legal review,"[""Zendesk"", ""Okta"", ""PostgreSQL""]",2025-01-01T09:00:00Z
+TEAM-SEC-APP,Application Security,DEPT-SEC,EMP-0336,Secure development and risk assessment,"[""HubSpot"", ""Notion"", ""Terraform""]",2025-01-01T09:00:00Z
+TEAM-SEC-IT,IT & Identity,DEPT-SEC,EMP-0024,"Identity, endpoints, internal access","[""Slack"", ""GitHub"", ""Looker""]",2025-01-01T09:00:00Z
+TEAM-ENG-MOB,Developer Experience,DEPT-ENG,EMP-0073,"Build systems, SDKs, developer tooling","[""Notion"", ""Kubernetes"", ""Datadog""]",2025-01-01T09:00:00Z
+TEAM-PROD-PLAT,Platform Product,DEPT-PROD,EMP-0026,Platform roadmap and developer workflows,"[""Slack"", ""Okta"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-DATA-GOV,Data Governance,DEPT-DATA,EMP-0027,"Data quality, access, lineage","[""Okta"", ""Slack"", ""Snowflake""]",2025-01-01T09:00:00Z
+TEAM-SALES-OPS,Sales Operations,DEPT-SALES,EMP-0029,"CRM quality, forecasting, sales process","[""Datadog"", ""Figma"", ""Looker""]",2025-01-01T09:00:00Z
+TEAM-MKT-PROD,Product Marketing,DEPT-MKT,EMP-0030,"Positioning, launches, enablement","[""Okta"", ""PostgreSQL"", ""Linear""]",2025-01-01T09:00:00Z
+TEAM-CS-EDU,Customer Education,DEPT-CS,EMP-0031,"Guides, webinars, self-service learning","[""PostgreSQL"", ""Zendesk"", ""Notion""]",2025-01-01T09:00:00Z
+TEAM-SUP-TOOLS,Support Tools,DEPT-SUPPORT,EMP-0032,Support automation and knowledge base,"[""Looker"", ""Datadog"", ""Terraform""]",2025-01-01T09:00:00Z
+TEAM-OPS-AN,Operations Analytics,DEPT-OPS,EMP-0033,Operational metrics and analysis,"[""Zendesk"", ""Looker"", ""Okta""]",2025-01-01T09:00:00Z
+TEAM-PEOPLE-OPS,People Operations,DEPT-PEOPLE,EMP-0034,People processes and HR systems,"[""Slack"", ""HubSpot"", ""Looker""]",2025-01-01T09:00:00Z
+TEAM-FIN-REV,Revenue Operations Finance,DEPT-FIN,EMP-0035,Revenue recognition and billing controls,"[""Linear"", ""Salesforce"", ""Terraform""]",2025-01-01T09:00:00Z
+TEAM-SEC-GRC,Governance & Compliance,DEPT-SEC,EMP-0036,"Policies, audits, compliance controls","[""Notion"", ""Linear"", ""Figma""]",2025-01-01T09:00:00Z
+TEAM-ENG-DATA,Data Platform Engineering,DEPT-ENG,EMP-0085,"Pipelines, event infrastructure, data APIs","[""Snowflake"", ""Datadog"", ""Looker""]",2025-01-01T09:00:00Z
+TEAM-PROD-INT,Integrations Product,DEPT-PROD,EMP-0038,Integration ecosystem and partner workflows,"[""Terraform"", ""Salesforce"", ""Notion""]",2025-01-01T09:00:00Z

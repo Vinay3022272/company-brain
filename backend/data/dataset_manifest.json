@@ -1,0 +1,29 @@
+{
+  "dataset_name": "Synthetic SaaS Company Brain",
+  "seed": 42,
+  "generated_at": "deterministic relative to seed; timestamps are synthetic",
+  "fictional_data": true,
+  "employee_count": 500,
+  "table_row_counts": {
+    "departments": 12,
+    "teams": 40,
+    "employees": 500,
+    "projects": 50,
+    "work_items": 1800,
+    "tickets": 2600,
+    "incidents": 200,
+    "decisions": 400,
+    "documents": 700,
+    "comments": 4200,
+    "knowledge_entries": 700,
+    "team_memberships": 500,
+    "project_contributions": 423,
+    "source_systems": 6,
+    "relationships": 36716
+  },
+  "notes": [
+    "IDs are synthetic and stable for a given seed.",
+    "JSON-like arrays in CSV cells are JSON-encoded.",
+    "relationships.csv contains graph edges and evidence references."
+  ]
+}

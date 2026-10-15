@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "employee_count": 500,
+  "validated_foreign_key_rules": 46,
+  "relationship_count": 36716,
+  "unique_primary_keys": "PASS",
+  "relationship_endpoints": "PASS"
+}

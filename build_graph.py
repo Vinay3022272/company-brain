@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from falkordb import FalkorDB
 
 # Connect to your local FalkorDB instance

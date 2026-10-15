@@ -1,0 +1,7 @@
+source_system_id,name,source_type,trust_level
+SRC-LINEAR,Linear,work_tracking,high
+SRC-SLACK,Slack,discussion,medium
+SRC-NOTION,Notion,documentation,high
+SRC-ZENDESK,Zendesk,customer_support,high
+SRC-GITHUB,GitHub,code_and_reviews,high
+SRC-SYNTH,Synthetic Generator,synthetic,test_only
