@@ -1,0 +1,39 @@
+{
+  "overall_status": "PASS",
+  "timestamp": "2026-10-15T17:17:59.176045+00:00",
+  "summary": {
+    "total_csv_entities": 552,
+    "total_graph_nodes": 552,
+    "total_graph_relationships": 1544,
+    "total_wiki_pages": 552,
+    "total_placeholders": 0,
+    "total_quarantined": 0,
+    "broken_links_count": 0
+  },
+  "entity_breakdown": {
+    "Department": {
+      "csv_expected": 12,
+      "graph_nodes": 12,
+      "wiki_pages": 12
+    },
+    "Team": {
+      "csv_expected": 40,
+      "graph_nodes": 40,
+      "wiki_pages": 40
+    },
+    "Employee": {
+      "csv_expected": 500,
+      "graph_nodes": 500,
+      "wiki_pages": 500
+    }
+  },
+  "discrepancies": [],
+  "link_audit": {
+    "total_links_checked": 3088,
+    "broken_links_count": 0,
+    "broken_links": [],
+    "integrity_status": "PASS"
+  },
+  "unresolved_placeholders": [],
+  "quarantined_records": []
+}
