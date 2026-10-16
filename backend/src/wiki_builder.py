@@ -69,7 +69,7 @@ class WikiBuilder:
     def extract_existing_changelog(self, existing_content: str) -> List[str]:
         """Extract existing changelog rows so historical audit events are preserved."""
         match = re.search(
-            r"## 📜 Revision & Timeline History\s*\n.*?\n\| :---.*?\|\n(.*?)(?=\n## |\n---|\Z)",
+            r"## Revision & Timeline History\s*\n.*?\n\| :---.*?\|\n(.*?)(?=\n## |\n---|\Z)",
             existing_content,
             re.DOTALL
         )
@@ -178,7 +178,7 @@ class WikiBuilder:
             lines.append("")
 
         # 3. Revision & Timeline History Section (Incremental)
-        lines.append("## 📜 Revision & Timeline History")
+        lines.append("##  Revision & Timeline History")
         lines.append("")
         lines.append("| Timestamp | Event / Change | Details | Hash |")
         lines.append("| :--- | :--- | :--- | :--- |")
@@ -203,7 +203,7 @@ class WikiBuilder:
         lines.append("")
 
         # 4. Protected Manual Notes Section
-        lines.append("## ✍️ Protected Manual Notes")
+        lines.append("##  Protected Manual Notes")
         lines.append("<!-- BEGIN_MANUAL_NOTES -->")
         if manual_notes:
             lines.append(manual_notes)

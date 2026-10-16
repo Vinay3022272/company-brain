@@ -57,7 +57,44 @@ class QueryState(TypedDict, total=False):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def call_llm(prompt: str, system_prompt: str = "You are an expert AI enterprise assistant for Company Brain.") -> str:
-    """Invokes LLM if API key is provided, or uses deterministic reasoning fallback."""
+    """Invokes Ollama or OpenAI if available, or falls back to deterministic reasoning."""
+    ollama_host = os.getenv("OLLAMA_HOST", "http://localhost:11434").strip()
+    if not ollama_host.startswith("http://") and not ollama_host.startswith("https://"):
+        ollama_host = f"http://{ollama_host}"
+    if ollama_host.endswith("/"):
+        ollama_host = ollama_host[:-1]
+    # If host is 0.0.0.0 or 0.0.0.0:11434, replace 0.0.0.0 with 127.0.0.1 for client connection
+    ollama_host = ollama_host.replace("0.0.0.0", "127.0.0.1")
+    if ":" not in ollama_host[7:]:
+        ollama_host = f"{ollama_host}:11434"
+
+    ollama_model = os.getenv("OLLAMA_MODEL", "gpt-oss:120b-cloud")
+    try:
+        import urllib.request
+        req_data = json.dumps({
+            "model": ollama_model,
+            "prompt": prompt,
+            "system": system_prompt,
+            "stream": False,
+            "options": {"temperature": 0.0}
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            f"{ollama_host}/api/generate",
+            data=req_data,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            if resp.status == 200:
+                body = json.loads(resp.read().decode("utf-8"))
+                response_text = body.get("response", "").strip()
+                if response_text:
+                    logger.info(f"Successfully generated answer using Ollama model [{ollama_model}]")
+                    return response_text
+    except Exception as e:
+        logger.info(f"Ollama call ({ollama_model}) skipped/failed: {e}. Trying secondary providers...")
+
+    # 2. Try OpenAI if key is present
     openai_key = os.getenv("OPENAI_API_KEY")
     if openai_key:
         try:
@@ -73,9 +110,9 @@ def call_llm(prompt: str, system_prompt: str = "You are an expert AI enterprise 
             )
             return resp.choices[0].message.content.strip()
         except Exception as e:
-            logger.warning(f"LLM API call failed ({e}). Using deterministic reasoning engine.")
+            logger.warning(f"OpenAI API call failed ({e}). Using deterministic reasoning engine.")
 
-    # Rule-based fallback if no API key is present
+    # 3. Rule-based fallback if no LLM responded
     return ""
 
 
@@ -260,28 +297,28 @@ def synthesize_answer(state: QueryState) -> Dict[str, Any]:
         graph_evidence_lines.append(f"- ({e['source']}) -[:{e['relationship']}]-> ({e['target']})")
     graph_evidence_text = "\n".join(graph_evidence_lines) if graph_evidence_lines else "Direct entity match"
 
-    # Format wiki excerpts
+    # Format wiki excerpts with full text and preserved manual notes
     wiki_excerpts = []
     citations = []
     for eid, pinfo in list(pages.items())[:5]:
-        content_snippet = pinfo["content"][:600].replace("\n", " ")
-        wiki_excerpts.append(f"[{pinfo['file_path']}]: {content_snippet}")
+        wiki_excerpts.append(f"### [Wiki Page: {pinfo['file_path']}]\n{pinfo['content']}")
         citations.append(pinfo["file_path"])
     wiki_context_text = "\n\n".join(wiki_excerpts)
 
     prompt = f"""
 User Question: "{query}"
 
-=== GRAPH RELATIONSHIP EVIDENCE ===
+=== GRAPH RELATIONSHIP EVIDENCE (FalkorDB) ===
 {graph_evidence_text}
 
-=== VERIFIED WIKI EXCERPTS ===
+=== VERIFIED LIVING WIKI CONTENT (Markdown Wiki Pages) ===
 {wiki_context_text}
 
 Instructions:
-1. Answer the user question accurately and comprehensively using ONLY the provided Graph and Wiki context.
-2. Cite the exact entity IDs and wiki file paths.
-3. State the verified relationships clearly.
+1. Answer the user question accurately, naturally, and comprehensively using the provided Graph Relationships and Living Wiki text.
+2. Read the Wiki tables, manual human notes, and core properties to extract key details.
+3. Cite the exact entity IDs and wiki file paths as evidence.
+4. Formulate a clear, direct, and well-structured response.
 """
 
     # Attempt LLM call if available
