@@ -5,7 +5,7 @@ display_name: "Engineering"
 source_file: "departments.csv"
 row_hash: "64773914a0c7c31f"
 status: "ACTIVE"
-last_synced: "2026-10-15 17:17:49Z"
+last_synced: "2026-10-16 10:33:21Z"
 ---
 
 # Engineering (`DEPT-ENG`)
@@ -84,8 +84,7 @@ last_synced: "2026-10-15 17:17:49Z"
 
 | Timestamp | Event / Change | Details | Hash |
 | :--- | :--- | :--- | :--- |
-| **2026-10-15 17:16:45Z** | `UNCHANGED` | Graph relationship re-synced. | `64773914` |
-| **2026-10-15 17:17:49Z** | `UNCHANGED` | Graph relationship re-synced. | `64773914` |
+| **2026-10-16 10:33:21Z** | `ADDED` | Initial entity record created and linked. | `64773914` |
 
 ## ✍️ Protected Manual Notes
 <!-- BEGIN_MANUAL_NOTES -->
@@ -93,4 +92,4 @@ last_synced: "2026-10-15 17:17:49Z"
 <!-- END_MANUAL_NOTES -->
 
 ---
-*Company Brain Knowledge Wiki — Last updated: 2026-10-15 17:17:49Z*
+*Company Brain Knowledge Wiki — Last updated: 2026-10-16 10:33:21Z*

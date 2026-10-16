@@ -12,7 +12,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-from .config import logger
+from .config import DATA_DIR, logger
 from .schema import FK_TO_RELATIONSHIP, SCHEMA_CONFIG
 
 
@@ -23,7 +23,7 @@ class GraphStore:
     an in-memory graph engine for testing and local development.
     """
 
-    def __init__(self, host: str = "localhost", port: int = 6379, graph_name: str = "CompanyBrain"):
+    def __init__(self, host: str = "localhost", port: int = 6379, graph_name: str = "CompanyBrain01"):
         self.host = host
         self.port = port
         self.graph_name = graph_name
@@ -32,6 +32,32 @@ class GraphStore:
         self.is_connected = False
         self.in_memory_nodes: Dict[str, Dict[str, Any]] = {}  # id -> {label, properties, is_placeholder, ...}
         self.in_memory_edges: List[Dict[str, Any]] = []      # list of {id, src, rel, tgt, valid_from, valid_to, is_active}
+        self.storage_file = DATA_DIR / "graph_store_backup.json"
+        self.load_from_disk()
+
+    def load_from_disk(self):
+        """Load in-memory graph snapshot from disk cache if present."""
+        if self.storage_file.exists():
+            try:
+                import json
+                with open(self.storage_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                self.in_memory_nodes = data.get("nodes", {})
+                self.in_memory_edges = data.get("edges", [])
+            except Exception as e:
+                logger.warning(f"Could not load graph cache from disk: {e}")
+
+    def save_to_disk(self):
+        """Persist in-memory graph snapshot to disk cache."""
+        try:
+            import json
+            with open(self.storage_file, "w", encoding="utf-8") as f:
+                json.dump({
+                    "nodes": self.in_memory_nodes,
+                    "edges": self.in_memory_edges,
+                }, f, indent=2)
+        except Exception as e:
+            logger.warning(f"Could not save graph cache to disk: {e}")
 
     def connect(self) -> bool:
         """Attempt connection to FalkorDB. Fallback to in-memory graph on failure."""
@@ -64,6 +90,11 @@ class GraphStore:
                 logger.warning(f"Error clearing FalkorDB graph: {e}")
         self.in_memory_nodes.clear()
         self.in_memory_edges.clear()
+        if self.storage_file.exists():
+            try:
+                self.storage_file.unlink()
+            except Exception:
+                pass
 
     # ─────────────────────────────────────────────────────────────────────────
     # Step 2: Idempotent Entity Upsertion & Placeholder Management
@@ -138,6 +169,7 @@ class GraphStore:
                 stats["updated"] += 1
             else:
                 stats["inserted"] += 1
+        self.save_to_disk()
         return stats
 
     # ─────────────────────────────────────────────────────────────────────────
@@ -245,6 +277,8 @@ class GraphStore:
                 })
             except Exception as e:
                 logger.error(f"Error in FalkorDB edge reconciliation: {e}")
+
+        self.save_to_disk()
 
         return {
             "source_id": source_id,

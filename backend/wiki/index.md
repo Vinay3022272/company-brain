@@ -6,8 +6,8 @@ All pages are automatically derived from verified canonical data records and lin
 ## Available Entity Catalogs
 
 - **[Department Catalog](departments/)**: 12 verified pages
-- **[Team Catalog](teams/)**: 40 verified pages
-- **[Employee Catalog](employees/)**: 500 verified pages
+- **[Team Catalog](teams/)**: 0 verified pages
+- **[Employee Catalog](employees/)**: 0 verified pages
 - **[Project Catalog](projects/)**: 0 verified pages
 - **[WorkItem Catalog](work_items/)**: 0 verified pages
 - **[Ticket Catalog](tickets/)**: 0 verified pages
@@ -19,4 +19,4 @@ All pages are automatically derived from verified canonical data records and lin
 - **[SourceSystem Catalog](source_systems/)**: 0 verified pages
 
 ---
-*Last updated: 2026-10-15 17:17:50Z*
+*Last updated: 2026-10-16 10:33:21Z*

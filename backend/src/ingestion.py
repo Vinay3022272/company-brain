@@ -483,23 +483,34 @@ def execute_incremental_ingestion_batch(
     data_dir: Optional[Path] = None,
     chunk_size: int = 500,
     batch_id: Optional[str] = None,
+    previous_hashes: Optional[Dict[str, str]] = None,
     max_workers: int = 4,
     persist_manifest: bool = True,
+    reset_manifest: bool = False,
 ) -> Dict[str, Any]:
     """
     Main entrypoint for Step 1 Ingestion:
     - Generates or tracks batch_id
-    - Loads existing sync_manifest checkpoints
+    - Loads existing sync_manifest checkpoints (or uses provided previous_hashes)
     - Processes files concurrently with conflict detection & diff classification
     - Resolves pending foreign-keys against newly discovered entities
     - Updates and persists sync_manifest
     """
     active_batch_id = batch_id or f"batch_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}_{str(uuid.uuid4())[:8]}"
-    manifest = load_sync_manifest()
+    manifest = {
+        "version": 1,
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "batches": {},
+        "entity_hashes": {},
+        "entity_snapshots": {},
+        "unresolved_foreign_keys": {},
+        "quarantined_records": [],
+        "processed_file_checksums": {},
+    } if reset_manifest else load_sync_manifest()
     
-    prev_hashes = manifest.get("entity_hashes", {})
-    prev_snapshots = manifest.get("entity_snapshots", {})
-    existing_unresolved = manifest.get("unresolved_foreign_keys", {})
+    prev_hashes = previous_hashes if previous_hashes is not None else manifest.get("entity_hashes", {})
+    prev_snapshots = {} if reset_manifest else manifest.get("entity_snapshots", {})
+    existing_unresolved = {} if reset_manifest else manifest.get("unresolved_foreign_keys", {})
     
     known_valid_ids = set(prev_hashes.keys())
 

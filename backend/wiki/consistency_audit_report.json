@@ -1,38 +1,2789 @@
 {
-  "overall_status": "PASS",
-  "timestamp": "2026-10-15T17:17:59.176045+00:00",
+  "overall_status": "NEEDS_REPAIR",
+  "timestamp": "2026-10-16T10:33:21.685995+00:00",
   "summary": {
-    "total_csv_entities": 552,
+    "total_csv_entities": 12,
     "total_graph_nodes": 552,
     "total_graph_relationships": 1544,
-    "total_wiki_pages": 552,
+    "total_wiki_pages": 12,
     "total_placeholders": 0,
     "total_quarantined": 0,
-    "broken_links_count": 0
+    "broken_links_count": 552
   },
   "entity_breakdown": {
     "Department": {
       "csv_expected": 12,
       "graph_nodes": 12,
       "wiki_pages": 12
-    },
-    "Team": {
-      "csv_expected": 40,
-      "graph_nodes": 40,
-      "wiki_pages": 40
-    },
-    "Employee": {
-      "csv_expected": 500,
-      "graph_nodes": 500,
-      "wiki_pages": 500
     }
   },
   "discrepancies": [],
   "link_audit": {
-    "total_links_checked": 3088,
-    "broken_links_count": 0,
-    "broken_links": [],
-    "integrity_status": "PASS"
+    "total_links_checked": 552,
+    "broken_links_count": 552,
+    "broken_links": [
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0007",
+        "target_link": "../employees/EMP-0007.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "TEAM-CS-ONB",
+        "target_link": "../teams/TEAM-CS-ONB.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "TEAM-CS-ACC",
+        "target_link": "../teams/TEAM-CS-ACC.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "TEAM-CS-EDU",
+        "target_link": "../teams/TEAM-CS-EDU.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0007",
+        "target_link": "../employees/EMP-0007.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0019",
+        "target_link": "../employees/EMP-0019.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0031",
+        "target_link": "../employees/EMP-0031.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0043",
+        "target_link": "../employees/EMP-0043.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0055",
+        "target_link": "../employees/EMP-0055.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0067",
+        "target_link": "../employees/EMP-0067.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0079",
+        "target_link": "../employees/EMP-0079.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0091",
+        "target_link": "../employees/EMP-0091.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0103",
+        "target_link": "../employees/EMP-0103.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0115",
+        "target_link": "../employees/EMP-0115.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0127",
+        "target_link": "../employees/EMP-0127.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0139",
+        "target_link": "../employees/EMP-0139.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0151",
+        "target_link": "../employees/EMP-0151.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0163",
+        "target_link": "../employees/EMP-0163.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0175",
+        "target_link": "../employees/EMP-0175.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0187",
+        "target_link": "../employees/EMP-0187.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0199",
+        "target_link": "../employees/EMP-0199.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0211",
+        "target_link": "../employees/EMP-0211.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0223",
+        "target_link": "../employees/EMP-0223.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0235",
+        "target_link": "../employees/EMP-0235.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0247",
+        "target_link": "../employees/EMP-0247.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0259",
+        "target_link": "../employees/EMP-0259.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0271",
+        "target_link": "../employees/EMP-0271.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0283",
+        "target_link": "../employees/EMP-0283.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0295",
+        "target_link": "../employees/EMP-0295.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0307",
+        "target_link": "../employees/EMP-0307.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0319",
+        "target_link": "../employees/EMP-0319.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0331",
+        "target_link": "../employees/EMP-0331.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0343",
+        "target_link": "../employees/EMP-0343.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0355",
+        "target_link": "../employees/EMP-0355.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0367",
+        "target_link": "../employees/EMP-0367.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0379",
+        "target_link": "../employees/EMP-0379.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0391",
+        "target_link": "../employees/EMP-0391.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0403",
+        "target_link": "../employees/EMP-0403.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0415",
+        "target_link": "../employees/EMP-0415.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0427",
+        "target_link": "../employees/EMP-0427.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0439",
+        "target_link": "../employees/EMP-0439.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0451",
+        "target_link": "../employees/EMP-0451.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0463",
+        "target_link": "../employees/EMP-0463.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0475",
+        "target_link": "../employees/EMP-0475.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0487",
+        "target_link": "../employees/EMP-0487.md"
+      },
+      {
+        "source_file": "departments\\DEPT-CS.md",
+        "link_text": "EMP-0499",
+        "target_link": "../employees/EMP-0499.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0003",
+        "target_link": "../employees/EMP-0003.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "TEAM-DATA-AN",
+        "target_link": "../teams/TEAM-DATA-AN.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "TEAM-DATA-ML",
+        "target_link": "../teams/TEAM-DATA-ML.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "TEAM-DATA-GOV",
+        "target_link": "../teams/TEAM-DATA-GOV.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0003",
+        "target_link": "../employees/EMP-0003.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0015",
+        "target_link": "../employees/EMP-0015.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0027",
+        "target_link": "../employees/EMP-0027.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0039",
+        "target_link": "../employees/EMP-0039.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0051",
+        "target_link": "../employees/EMP-0051.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0063",
+        "target_link": "../employees/EMP-0063.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0075",
+        "target_link": "../employees/EMP-0075.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0087",
+        "target_link": "../employees/EMP-0087.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0099",
+        "target_link": "../employees/EMP-0099.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0111",
+        "target_link": "../employees/EMP-0111.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0123",
+        "target_link": "../employees/EMP-0123.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0135",
+        "target_link": "../employees/EMP-0135.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0147",
+        "target_link": "../employees/EMP-0147.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0159",
+        "target_link": "../employees/EMP-0159.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0171",
+        "target_link": "../employees/EMP-0171.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0183",
+        "target_link": "../employees/EMP-0183.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0195",
+        "target_link": "../employees/EMP-0195.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0207",
+        "target_link": "../employees/EMP-0207.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0219",
+        "target_link": "../employees/EMP-0219.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0231",
+        "target_link": "../employees/EMP-0231.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0243",
+        "target_link": "../employees/EMP-0243.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0255",
+        "target_link": "../employees/EMP-0255.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0267",
+        "target_link": "../employees/EMP-0267.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0279",
+        "target_link": "../employees/EMP-0279.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0291",
+        "target_link": "../employees/EMP-0291.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0303",
+        "target_link": "../employees/EMP-0303.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0315",
+        "target_link": "../employees/EMP-0315.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0327",
+        "target_link": "../employees/EMP-0327.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0339",
+        "target_link": "../employees/EMP-0339.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0351",
+        "target_link": "../employees/EMP-0351.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0363",
+        "target_link": "../employees/EMP-0363.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0375",
+        "target_link": "../employees/EMP-0375.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0387",
+        "target_link": "../employees/EMP-0387.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0399",
+        "target_link": "../employees/EMP-0399.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0411",
+        "target_link": "../employees/EMP-0411.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0423",
+        "target_link": "../employees/EMP-0423.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0435",
+        "target_link": "../employees/EMP-0435.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0447",
+        "target_link": "../employees/EMP-0447.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0459",
+        "target_link": "../employees/EMP-0459.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0471",
+        "target_link": "../employees/EMP-0471.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0483",
+        "target_link": "../employees/EMP-0483.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DATA.md",
+        "link_text": "EMP-0495",
+        "target_link": "../employees/EMP-0495.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0004",
+        "target_link": "../employees/EMP-0004.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "TEAM-DESIGN-UX",
+        "target_link": "../teams/TEAM-DESIGN-UX.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0004",
+        "target_link": "../employees/EMP-0004.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0016",
+        "target_link": "../employees/EMP-0016.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0028",
+        "target_link": "../employees/EMP-0028.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0040",
+        "target_link": "../employees/EMP-0040.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0052",
+        "target_link": "../employees/EMP-0052.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0064",
+        "target_link": "../employees/EMP-0064.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0076",
+        "target_link": "../employees/EMP-0076.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0088",
+        "target_link": "../employees/EMP-0088.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0100",
+        "target_link": "../employees/EMP-0100.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0112",
+        "target_link": "../employees/EMP-0112.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0124",
+        "target_link": "../employees/EMP-0124.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0136",
+        "target_link": "../employees/EMP-0136.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0148",
+        "target_link": "../employees/EMP-0148.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0160",
+        "target_link": "../employees/EMP-0160.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0172",
+        "target_link": "../employees/EMP-0172.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0184",
+        "target_link": "../employees/EMP-0184.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0196",
+        "target_link": "../employees/EMP-0196.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0208",
+        "target_link": "../employees/EMP-0208.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0220",
+        "target_link": "../employees/EMP-0220.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0232",
+        "target_link": "../employees/EMP-0232.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0244",
+        "target_link": "../employees/EMP-0244.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0256",
+        "target_link": "../employees/EMP-0256.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0268",
+        "target_link": "../employees/EMP-0268.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0280",
+        "target_link": "../employees/EMP-0280.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0292",
+        "target_link": "../employees/EMP-0292.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0304",
+        "target_link": "../employees/EMP-0304.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0316",
+        "target_link": "../employees/EMP-0316.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0328",
+        "target_link": "../employees/EMP-0328.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0340",
+        "target_link": "../employees/EMP-0340.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0352",
+        "target_link": "../employees/EMP-0352.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0364",
+        "target_link": "../employees/EMP-0364.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0376",
+        "target_link": "../employees/EMP-0376.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0388",
+        "target_link": "../employees/EMP-0388.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0400",
+        "target_link": "../employees/EMP-0400.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0412",
+        "target_link": "../employees/EMP-0412.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0424",
+        "target_link": "../employees/EMP-0424.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0436",
+        "target_link": "../employees/EMP-0436.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0448",
+        "target_link": "../employees/EMP-0448.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0460",
+        "target_link": "../employees/EMP-0460.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0472",
+        "target_link": "../employees/EMP-0472.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0484",
+        "target_link": "../employees/EMP-0484.md"
+      },
+      {
+        "source_file": "departments\\DEPT-DESIGN.md",
+        "link_text": "EMP-0496",
+        "target_link": "../employees/EMP-0496.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0001",
+        "target_link": "../employees/EMP-0001.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-PLAT",
+        "target_link": "../teams/TEAM-ENG-PLAT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-WEB",
+        "target_link": "../teams/TEAM-ENG-WEB.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-BILL",
+        "target_link": "../teams/TEAM-ENG-BILL.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-INT",
+        "target_link": "../teams/TEAM-ENG-INT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-QA",
+        "target_link": "../teams/TEAM-ENG-QA.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-SRE",
+        "target_link": "../teams/TEAM-ENG-SRE.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-MOB",
+        "target_link": "../teams/TEAM-ENG-MOB.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "TEAM-ENG-DATA",
+        "target_link": "../teams/TEAM-ENG-DATA.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0001",
+        "target_link": "../employees/EMP-0001.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0013",
+        "target_link": "../employees/EMP-0013.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0025",
+        "target_link": "../employees/EMP-0025.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0037",
+        "target_link": "../employees/EMP-0037.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0049",
+        "target_link": "../employees/EMP-0049.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0061",
+        "target_link": "../employees/EMP-0061.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0073",
+        "target_link": "../employees/EMP-0073.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0085",
+        "target_link": "../employees/EMP-0085.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0097",
+        "target_link": "../employees/EMP-0097.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0109",
+        "target_link": "../employees/EMP-0109.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0121",
+        "target_link": "../employees/EMP-0121.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0133",
+        "target_link": "../employees/EMP-0133.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0145",
+        "target_link": "../employees/EMP-0145.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0157",
+        "target_link": "../employees/EMP-0157.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0169",
+        "target_link": "../employees/EMP-0169.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0181",
+        "target_link": "../employees/EMP-0181.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0193",
+        "target_link": "../employees/EMP-0193.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0205",
+        "target_link": "../employees/EMP-0205.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0217",
+        "target_link": "../employees/EMP-0217.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0229",
+        "target_link": "../employees/EMP-0229.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0241",
+        "target_link": "../employees/EMP-0241.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0253",
+        "target_link": "../employees/EMP-0253.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0265",
+        "target_link": "../employees/EMP-0265.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0277",
+        "target_link": "../employees/EMP-0277.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0289",
+        "target_link": "../employees/EMP-0289.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0301",
+        "target_link": "../employees/EMP-0301.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0313",
+        "target_link": "../employees/EMP-0313.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0325",
+        "target_link": "../employees/EMP-0325.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0337",
+        "target_link": "../employees/EMP-0337.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0349",
+        "target_link": "../employees/EMP-0349.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0361",
+        "target_link": "../employees/EMP-0361.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0373",
+        "target_link": "../employees/EMP-0373.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0385",
+        "target_link": "../employees/EMP-0385.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0397",
+        "target_link": "../employees/EMP-0397.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0409",
+        "target_link": "../employees/EMP-0409.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0421",
+        "target_link": "../employees/EMP-0421.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0433",
+        "target_link": "../employees/EMP-0433.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0445",
+        "target_link": "../employees/EMP-0445.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0457",
+        "target_link": "../employees/EMP-0457.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0469",
+        "target_link": "../employees/EMP-0469.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0481",
+        "target_link": "../employees/EMP-0481.md"
+      },
+      {
+        "source_file": "departments\\DEPT-ENG.md",
+        "link_text": "EMP-0493",
+        "target_link": "../employees/EMP-0493.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0011",
+        "target_link": "../employees/EMP-0011.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "TEAM-FIN-PLAN",
+        "target_link": "../teams/TEAM-FIN-PLAN.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "TEAM-FIN-LEGAL",
+        "target_link": "../teams/TEAM-FIN-LEGAL.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "TEAM-FIN-REV",
+        "target_link": "../teams/TEAM-FIN-REV.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0011",
+        "target_link": "../employees/EMP-0011.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0023",
+        "target_link": "../employees/EMP-0023.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0035",
+        "target_link": "../employees/EMP-0035.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0047",
+        "target_link": "../employees/EMP-0047.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0059",
+        "target_link": "../employees/EMP-0059.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0071",
+        "target_link": "../employees/EMP-0071.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0083",
+        "target_link": "../employees/EMP-0083.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0095",
+        "target_link": "../employees/EMP-0095.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0107",
+        "target_link": "../employees/EMP-0107.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0119",
+        "target_link": "../employees/EMP-0119.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0131",
+        "target_link": "../employees/EMP-0131.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0143",
+        "target_link": "../employees/EMP-0143.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0155",
+        "target_link": "../employees/EMP-0155.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0167",
+        "target_link": "../employees/EMP-0167.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0179",
+        "target_link": "../employees/EMP-0179.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0191",
+        "target_link": "../employees/EMP-0191.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0203",
+        "target_link": "../employees/EMP-0203.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0215",
+        "target_link": "../employees/EMP-0215.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0227",
+        "target_link": "../employees/EMP-0227.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0239",
+        "target_link": "../employees/EMP-0239.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0251",
+        "target_link": "../employees/EMP-0251.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0263",
+        "target_link": "../employees/EMP-0263.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0275",
+        "target_link": "../employees/EMP-0275.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0287",
+        "target_link": "../employees/EMP-0287.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0299",
+        "target_link": "../employees/EMP-0299.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0311",
+        "target_link": "../employees/EMP-0311.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0323",
+        "target_link": "../employees/EMP-0323.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0335",
+        "target_link": "../employees/EMP-0335.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0347",
+        "target_link": "../employees/EMP-0347.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0359",
+        "target_link": "../employees/EMP-0359.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0371",
+        "target_link": "../employees/EMP-0371.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0383",
+        "target_link": "../employees/EMP-0383.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0395",
+        "target_link": "../employees/EMP-0395.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0407",
+        "target_link": "../employees/EMP-0407.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0419",
+        "target_link": "../employees/EMP-0419.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0431",
+        "target_link": "../employees/EMP-0431.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0443",
+        "target_link": "../employees/EMP-0443.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0455",
+        "target_link": "../employees/EMP-0455.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0467",
+        "target_link": "../employees/EMP-0467.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0479",
+        "target_link": "../employees/EMP-0479.md"
+      },
+      {
+        "source_file": "departments\\DEPT-FIN.md",
+        "link_text": "EMP-0491",
+        "target_link": "../employees/EMP-0491.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0006",
+        "target_link": "../employees/EMP-0006.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "TEAM-MKT-CONT",
+        "target_link": "../teams/TEAM-MKT-CONT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "TEAM-MKT-DEMAND",
+        "target_link": "../teams/TEAM-MKT-DEMAND.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "TEAM-MKT-PROD",
+        "target_link": "../teams/TEAM-MKT-PROD.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0006",
+        "target_link": "../employees/EMP-0006.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0018",
+        "target_link": "../employees/EMP-0018.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0030",
+        "target_link": "../employees/EMP-0030.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0042",
+        "target_link": "../employees/EMP-0042.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0054",
+        "target_link": "../employees/EMP-0054.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0066",
+        "target_link": "../employees/EMP-0066.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0078",
+        "target_link": "../employees/EMP-0078.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0090",
+        "target_link": "../employees/EMP-0090.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0102",
+        "target_link": "../employees/EMP-0102.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0114",
+        "target_link": "../employees/EMP-0114.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0126",
+        "target_link": "../employees/EMP-0126.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0138",
+        "target_link": "../employees/EMP-0138.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0150",
+        "target_link": "../employees/EMP-0150.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0162",
+        "target_link": "../employees/EMP-0162.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0174",
+        "target_link": "../employees/EMP-0174.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0186",
+        "target_link": "../employees/EMP-0186.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0198",
+        "target_link": "../employees/EMP-0198.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0210",
+        "target_link": "../employees/EMP-0210.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0222",
+        "target_link": "../employees/EMP-0222.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0234",
+        "target_link": "../employees/EMP-0234.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0246",
+        "target_link": "../employees/EMP-0246.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0258",
+        "target_link": "../employees/EMP-0258.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0270",
+        "target_link": "../employees/EMP-0270.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0282",
+        "target_link": "../employees/EMP-0282.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0294",
+        "target_link": "../employees/EMP-0294.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0306",
+        "target_link": "../employees/EMP-0306.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0318",
+        "target_link": "../employees/EMP-0318.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0330",
+        "target_link": "../employees/EMP-0330.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0342",
+        "target_link": "../employees/EMP-0342.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0354",
+        "target_link": "../employees/EMP-0354.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0366",
+        "target_link": "../employees/EMP-0366.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0378",
+        "target_link": "../employees/EMP-0378.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0390",
+        "target_link": "../employees/EMP-0390.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0402",
+        "target_link": "../employees/EMP-0402.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0414",
+        "target_link": "../employees/EMP-0414.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0426",
+        "target_link": "../employees/EMP-0426.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0438",
+        "target_link": "../employees/EMP-0438.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0450",
+        "target_link": "../employees/EMP-0450.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0462",
+        "target_link": "../employees/EMP-0462.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0474",
+        "target_link": "../employees/EMP-0474.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0486",
+        "target_link": "../employees/EMP-0486.md"
+      },
+      {
+        "source_file": "departments\\DEPT-MKT.md",
+        "link_text": "EMP-0498",
+        "target_link": "../employees/EMP-0498.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0009",
+        "target_link": "../employees/EMP-0009.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "TEAM-OPS-BIZ",
+        "target_link": "../teams/TEAM-OPS-BIZ.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "TEAM-OPS-PMO",
+        "target_link": "../teams/TEAM-OPS-PMO.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "TEAM-OPS-AN",
+        "target_link": "../teams/TEAM-OPS-AN.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0009",
+        "target_link": "../employees/EMP-0009.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0021",
+        "target_link": "../employees/EMP-0021.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0033",
+        "target_link": "../employees/EMP-0033.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0045",
+        "target_link": "../employees/EMP-0045.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0057",
+        "target_link": "../employees/EMP-0057.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0069",
+        "target_link": "../employees/EMP-0069.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0081",
+        "target_link": "../employees/EMP-0081.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0093",
+        "target_link": "../employees/EMP-0093.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0105",
+        "target_link": "../employees/EMP-0105.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0117",
+        "target_link": "../employees/EMP-0117.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0129",
+        "target_link": "../employees/EMP-0129.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0141",
+        "target_link": "../employees/EMP-0141.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0153",
+        "target_link": "../employees/EMP-0153.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0165",
+        "target_link": "../employees/EMP-0165.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0177",
+        "target_link": "../employees/EMP-0177.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0189",
+        "target_link": "../employees/EMP-0189.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0201",
+        "target_link": "../employees/EMP-0201.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0213",
+        "target_link": "../employees/EMP-0213.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0225",
+        "target_link": "../employees/EMP-0225.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0237",
+        "target_link": "../employees/EMP-0237.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0249",
+        "target_link": "../employees/EMP-0249.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0261",
+        "target_link": "../employees/EMP-0261.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0273",
+        "target_link": "../employees/EMP-0273.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0285",
+        "target_link": "../employees/EMP-0285.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0297",
+        "target_link": "../employees/EMP-0297.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0309",
+        "target_link": "../employees/EMP-0309.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0321",
+        "target_link": "../employees/EMP-0321.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0333",
+        "target_link": "../employees/EMP-0333.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0345",
+        "target_link": "../employees/EMP-0345.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0357",
+        "target_link": "../employees/EMP-0357.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0369",
+        "target_link": "../employees/EMP-0369.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0381",
+        "target_link": "../employees/EMP-0381.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0393",
+        "target_link": "../employees/EMP-0393.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0405",
+        "target_link": "../employees/EMP-0405.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0417",
+        "target_link": "../employees/EMP-0417.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0429",
+        "target_link": "../employees/EMP-0429.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0441",
+        "target_link": "../employees/EMP-0441.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0453",
+        "target_link": "../employees/EMP-0453.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0465",
+        "target_link": "../employees/EMP-0465.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0477",
+        "target_link": "../employees/EMP-0477.md"
+      },
+      {
+        "source_file": "departments\\DEPT-OPS.md",
+        "link_text": "EMP-0489",
+        "target_link": "../employees/EMP-0489.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0010",
+        "target_link": "../employees/EMP-0010.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "TEAM-PEOPLE-REC",
+        "target_link": "../teams/TEAM-PEOPLE-REC.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "TEAM-PEOPLE-DEV",
+        "target_link": "../teams/TEAM-PEOPLE-DEV.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "TEAM-PEOPLE-OPS",
+        "target_link": "../teams/TEAM-PEOPLE-OPS.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0010",
+        "target_link": "../employees/EMP-0010.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0022",
+        "target_link": "../employees/EMP-0022.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0034",
+        "target_link": "../employees/EMP-0034.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0046",
+        "target_link": "../employees/EMP-0046.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0058",
+        "target_link": "../employees/EMP-0058.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0070",
+        "target_link": "../employees/EMP-0070.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0082",
+        "target_link": "../employees/EMP-0082.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0094",
+        "target_link": "../employees/EMP-0094.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0106",
+        "target_link": "../employees/EMP-0106.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0118",
+        "target_link": "../employees/EMP-0118.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0130",
+        "target_link": "../employees/EMP-0130.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0142",
+        "target_link": "../employees/EMP-0142.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0154",
+        "target_link": "../employees/EMP-0154.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0166",
+        "target_link": "../employees/EMP-0166.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0178",
+        "target_link": "../employees/EMP-0178.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0190",
+        "target_link": "../employees/EMP-0190.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0202",
+        "target_link": "../employees/EMP-0202.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0214",
+        "target_link": "../employees/EMP-0214.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0226",
+        "target_link": "../employees/EMP-0226.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0238",
+        "target_link": "../employees/EMP-0238.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0250",
+        "target_link": "../employees/EMP-0250.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0262",
+        "target_link": "../employees/EMP-0262.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0274",
+        "target_link": "../employees/EMP-0274.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0286",
+        "target_link": "../employees/EMP-0286.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0298",
+        "target_link": "../employees/EMP-0298.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0310",
+        "target_link": "../employees/EMP-0310.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0322",
+        "target_link": "../employees/EMP-0322.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0334",
+        "target_link": "../employees/EMP-0334.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0346",
+        "target_link": "../employees/EMP-0346.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0358",
+        "target_link": "../employees/EMP-0358.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0370",
+        "target_link": "../employees/EMP-0370.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0382",
+        "target_link": "../employees/EMP-0382.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0394",
+        "target_link": "../employees/EMP-0394.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0406",
+        "target_link": "../employees/EMP-0406.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0418",
+        "target_link": "../employees/EMP-0418.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0430",
+        "target_link": "../employees/EMP-0430.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0442",
+        "target_link": "../employees/EMP-0442.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0454",
+        "target_link": "../employees/EMP-0454.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0466",
+        "target_link": "../employees/EMP-0466.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0478",
+        "target_link": "../employees/EMP-0478.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PEOPLE.md",
+        "link_text": "EMP-0490",
+        "target_link": "../employees/EMP-0490.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0002",
+        "target_link": "../employees/EMP-0002.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "TEAM-PROD-CORE",
+        "target_link": "../teams/TEAM-PROD-CORE.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "TEAM-PROD-GROW",
+        "target_link": "../teams/TEAM-PROD-GROW.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "TEAM-PROD-PLAT",
+        "target_link": "../teams/TEAM-PROD-PLAT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "TEAM-PROD-INT",
+        "target_link": "../teams/TEAM-PROD-INT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0002",
+        "target_link": "../employees/EMP-0002.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0014",
+        "target_link": "../employees/EMP-0014.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0026",
+        "target_link": "../employees/EMP-0026.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0038",
+        "target_link": "../employees/EMP-0038.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0050",
+        "target_link": "../employees/EMP-0050.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0062",
+        "target_link": "../employees/EMP-0062.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0074",
+        "target_link": "../employees/EMP-0074.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0086",
+        "target_link": "../employees/EMP-0086.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0098",
+        "target_link": "../employees/EMP-0098.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0110",
+        "target_link": "../employees/EMP-0110.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0122",
+        "target_link": "../employees/EMP-0122.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0134",
+        "target_link": "../employees/EMP-0134.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0146",
+        "target_link": "../employees/EMP-0146.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0158",
+        "target_link": "../employees/EMP-0158.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0170",
+        "target_link": "../employees/EMP-0170.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0182",
+        "target_link": "../employees/EMP-0182.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0194",
+        "target_link": "../employees/EMP-0194.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0206",
+        "target_link": "../employees/EMP-0206.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0218",
+        "target_link": "../employees/EMP-0218.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0230",
+        "target_link": "../employees/EMP-0230.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0242",
+        "target_link": "../employees/EMP-0242.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0254",
+        "target_link": "../employees/EMP-0254.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0266",
+        "target_link": "../employees/EMP-0266.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0278",
+        "target_link": "../employees/EMP-0278.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0290",
+        "target_link": "../employees/EMP-0290.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0302",
+        "target_link": "../employees/EMP-0302.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0314",
+        "target_link": "../employees/EMP-0314.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0326",
+        "target_link": "../employees/EMP-0326.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0338",
+        "target_link": "../employees/EMP-0338.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0350",
+        "target_link": "../employees/EMP-0350.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0362",
+        "target_link": "../employees/EMP-0362.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0374",
+        "target_link": "../employees/EMP-0374.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0386",
+        "target_link": "../employees/EMP-0386.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0398",
+        "target_link": "../employees/EMP-0398.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0410",
+        "target_link": "../employees/EMP-0410.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0422",
+        "target_link": "../employees/EMP-0422.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0434",
+        "target_link": "../employees/EMP-0434.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0446",
+        "target_link": "../employees/EMP-0446.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0458",
+        "target_link": "../employees/EMP-0458.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0470",
+        "target_link": "../employees/EMP-0470.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0482",
+        "target_link": "../employees/EMP-0482.md"
+      },
+      {
+        "source_file": "departments\\DEPT-PROD.md",
+        "link_text": "EMP-0494",
+        "target_link": "../employees/EMP-0494.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0005",
+        "target_link": "../employees/EMP-0005.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "TEAM-SALES-ENT",
+        "target_link": "../teams/TEAM-SALES-ENT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "TEAM-SALES-MID",
+        "target_link": "../teams/TEAM-SALES-MID.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "TEAM-SALES-OPS",
+        "target_link": "../teams/TEAM-SALES-OPS.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0005",
+        "target_link": "../employees/EMP-0005.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0017",
+        "target_link": "../employees/EMP-0017.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0029",
+        "target_link": "../employees/EMP-0029.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0041",
+        "target_link": "../employees/EMP-0041.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0053",
+        "target_link": "../employees/EMP-0053.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0065",
+        "target_link": "../employees/EMP-0065.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0077",
+        "target_link": "../employees/EMP-0077.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0089",
+        "target_link": "../employees/EMP-0089.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0101",
+        "target_link": "../employees/EMP-0101.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0113",
+        "target_link": "../employees/EMP-0113.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0125",
+        "target_link": "../employees/EMP-0125.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0137",
+        "target_link": "../employees/EMP-0137.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0149",
+        "target_link": "../employees/EMP-0149.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0161",
+        "target_link": "../employees/EMP-0161.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0173",
+        "target_link": "../employees/EMP-0173.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0185",
+        "target_link": "../employees/EMP-0185.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0197",
+        "target_link": "../employees/EMP-0197.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0209",
+        "target_link": "../employees/EMP-0209.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0221",
+        "target_link": "../employees/EMP-0221.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0233",
+        "target_link": "../employees/EMP-0233.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0245",
+        "target_link": "../employees/EMP-0245.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0257",
+        "target_link": "../employees/EMP-0257.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0269",
+        "target_link": "../employees/EMP-0269.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0281",
+        "target_link": "../employees/EMP-0281.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0293",
+        "target_link": "../employees/EMP-0293.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0305",
+        "target_link": "../employees/EMP-0305.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0317",
+        "target_link": "../employees/EMP-0317.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0329",
+        "target_link": "../employees/EMP-0329.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0341",
+        "target_link": "../employees/EMP-0341.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0353",
+        "target_link": "../employees/EMP-0353.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0365",
+        "target_link": "../employees/EMP-0365.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0377",
+        "target_link": "../employees/EMP-0377.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0389",
+        "target_link": "../employees/EMP-0389.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0401",
+        "target_link": "../employees/EMP-0401.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0413",
+        "target_link": "../employees/EMP-0413.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0425",
+        "target_link": "../employees/EMP-0425.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0437",
+        "target_link": "../employees/EMP-0437.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0449",
+        "target_link": "../employees/EMP-0449.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0461",
+        "target_link": "../employees/EMP-0461.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0473",
+        "target_link": "../employees/EMP-0473.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0485",
+        "target_link": "../employees/EMP-0485.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SALES.md",
+        "link_text": "EMP-0497",
+        "target_link": "../employees/EMP-0497.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0012",
+        "target_link": "../employees/EMP-0012.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "TEAM-SEC-APP",
+        "target_link": "../teams/TEAM-SEC-APP.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "TEAM-SEC-IT",
+        "target_link": "../teams/TEAM-SEC-IT.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "TEAM-SEC-GRC",
+        "target_link": "../teams/TEAM-SEC-GRC.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0012",
+        "target_link": "../employees/EMP-0012.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0024",
+        "target_link": "../employees/EMP-0024.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0036",
+        "target_link": "../employees/EMP-0036.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0048",
+        "target_link": "../employees/EMP-0048.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0060",
+        "target_link": "../employees/EMP-0060.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0072",
+        "target_link": "../employees/EMP-0072.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0084",
+        "target_link": "../employees/EMP-0084.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0096",
+        "target_link": "../employees/EMP-0096.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0108",
+        "target_link": "../employees/EMP-0108.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0120",
+        "target_link": "../employees/EMP-0120.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0132",
+        "target_link": "../employees/EMP-0132.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0144",
+        "target_link": "../employees/EMP-0144.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0156",
+        "target_link": "../employees/EMP-0156.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0168",
+        "target_link": "../employees/EMP-0168.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0180",
+        "target_link": "../employees/EMP-0180.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0192",
+        "target_link": "../employees/EMP-0192.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0204",
+        "target_link": "../employees/EMP-0204.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0216",
+        "target_link": "../employees/EMP-0216.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0228",
+        "target_link": "../employees/EMP-0228.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0240",
+        "target_link": "../employees/EMP-0240.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0252",
+        "target_link": "../employees/EMP-0252.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0264",
+        "target_link": "../employees/EMP-0264.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0276",
+        "target_link": "../employees/EMP-0276.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0288",
+        "target_link": "../employees/EMP-0288.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0300",
+        "target_link": "../employees/EMP-0300.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0312",
+        "target_link": "../employees/EMP-0312.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0324",
+        "target_link": "../employees/EMP-0324.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0336",
+        "target_link": "../employees/EMP-0336.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0348",
+        "target_link": "../employees/EMP-0348.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0360",
+        "target_link": "../employees/EMP-0360.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0372",
+        "target_link": "../employees/EMP-0372.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0384",
+        "target_link": "../employees/EMP-0384.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0396",
+        "target_link": "../employees/EMP-0396.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0408",
+        "target_link": "../employees/EMP-0408.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0420",
+        "target_link": "../employees/EMP-0420.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0432",
+        "target_link": "../employees/EMP-0432.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0444",
+        "target_link": "../employees/EMP-0444.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0456",
+        "target_link": "../employees/EMP-0456.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0468",
+        "target_link": "../employees/EMP-0468.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0480",
+        "target_link": "../employees/EMP-0480.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SEC.md",
+        "link_text": "EMP-0492",
+        "target_link": "../employees/EMP-0492.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0008",
+        "target_link": "../employees/EMP-0008.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "TEAM-SUP-L1",
+        "target_link": "../teams/TEAM-SUP-L1.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "TEAM-SUP-TECH",
+        "target_link": "../teams/TEAM-SUP-TECH.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "TEAM-SUP-TOOLS",
+        "target_link": "../teams/TEAM-SUP-TOOLS.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0008",
+        "target_link": "../employees/EMP-0008.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0020",
+        "target_link": "../employees/EMP-0020.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0032",
+        "target_link": "../employees/EMP-0032.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0044",
+        "target_link": "../employees/EMP-0044.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0056",
+        "target_link": "../employees/EMP-0056.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0068",
+        "target_link": "../employees/EMP-0068.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0080",
+        "target_link": "../employees/EMP-0080.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0092",
+        "target_link": "../employees/EMP-0092.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0104",
+        "target_link": "../employees/EMP-0104.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0116",
+        "target_link": "../employees/EMP-0116.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0128",
+        "target_link": "../employees/EMP-0128.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0140",
+        "target_link": "../employees/EMP-0140.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0152",
+        "target_link": "../employees/EMP-0152.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0164",
+        "target_link": "../employees/EMP-0164.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0176",
+        "target_link": "../employees/EMP-0176.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0188",
+        "target_link": "../employees/EMP-0188.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0200",
+        "target_link": "../employees/EMP-0200.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0212",
+        "target_link": "../employees/EMP-0212.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0224",
+        "target_link": "../employees/EMP-0224.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0236",
+        "target_link": "../employees/EMP-0236.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0248",
+        "target_link": "../employees/EMP-0248.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0260",
+        "target_link": "../employees/EMP-0260.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0272",
+        "target_link": "../employees/EMP-0272.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0284",
+        "target_link": "../employees/EMP-0284.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0296",
+        "target_link": "../employees/EMP-0296.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0308",
+        "target_link": "../employees/EMP-0308.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0320",
+        "target_link": "../employees/EMP-0320.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0332",
+        "target_link": "../employees/EMP-0332.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0344",
+        "target_link": "../employees/EMP-0344.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0356",
+        "target_link": "../employees/EMP-0356.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0368",
+        "target_link": "../employees/EMP-0368.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0380",
+        "target_link": "../employees/EMP-0380.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0392",
+        "target_link": "../employees/EMP-0392.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0404",
+        "target_link": "../employees/EMP-0404.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0416",
+        "target_link": "../employees/EMP-0416.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0428",
+        "target_link": "../employees/EMP-0428.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0440",
+        "target_link": "../employees/EMP-0440.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0452",
+        "target_link": "../employees/EMP-0452.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0464",
+        "target_link": "../employees/EMP-0464.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0476",
+        "target_link": "../employees/EMP-0476.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0488",
+        "target_link": "../employees/EMP-0488.md"
+      },
+      {
+        "source_file": "departments\\DEPT-SUPPORT.md",
+        "link_text": "EMP-0500",
+        "target_link": "../employees/EMP-0500.md"
+      }
+    ],
+    "integrity_status": "BROKEN_LINKS_DETECTED"
   },
   "unresolved_placeholders": [],
   "quarantined_records": []

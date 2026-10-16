@@ -56,7 +56,8 @@ class WikiState(TypedDict, total=False):
     Complete state passed between nodes in the Company Brain LangGraph pipeline.
     All list and dict fields used in parallel branches have reducer annotations.
     """
-    # Batch Tracking & Checkpoints
+    # Ingestion Configuration
+    reset_manifest: Optional[bool]
     batch_id: Annotated[str, take_latest]
     chunk_size: int
     data_dir: Optional[str]
@@ -77,13 +78,22 @@ class WikiState(TypedDict, total=False):
     canonical_records: Annotated[Dict[str, List[Dict[str, Any]]], merge_canonical_records]
     relationships_records: Annotated[List[Dict[str, Any]], operator.add]
 
-    # Parallel Branch Progress
+    # Dirty Entity IDs for Incremental Wiki Generation
+    dirty_entity_ids: Annotated[List[str], take_latest]
+
+    # Audit & Status
+    audit_report: Annotated[Dict[str, Any], merge_dicts]
     branch_status: Annotated[Dict[str, str], merge_dicts]
 
     # Observability & Chunk Metadata
     chunk_metadata: Annotated[List[Dict[str, Any]], operator.add]
     stats: Annotated[Dict[str, Any], merge_dicts]
     errors: Annotated[List[str], operator.add]
+
+    # Retrieval Interface
+    query_text: Optional[str]
+    target_entity_id: Optional[str]
+    query_result: Annotated[Dict[str, Any], merge_dicts]
 
     # Pipeline Stage Tracking
     stage: Annotated[str, take_latest]
@@ -96,9 +106,13 @@ def create_initial_wiki_state(
     max_workers: int = 4,
     data_dir: Optional[str] = None,
     batch_id: Optional[str] = None,
+    reset_manifest: bool = False,
+    query_text: Optional[str] = None,
+    target_entity_id: Optional[str] = None,
 ) -> WikiState:
     """Helper to initialize an empty WikiState with defaults."""
     return {
+        "reset_manifest": reset_manifest,
         "batch_id": batch_id or "",
         "chunk_size": chunk_size,
         "data_dir": data_dir,
@@ -112,9 +126,14 @@ def create_initial_wiki_state(
         "now_resolved_foreign_keys": {},
         "canonical_records": {},
         "relationships_records": [],
+        "dirty_entity_ids": [],
+        "audit_report": {},
         "branch_status": {},
         "chunk_metadata": [],
         "stats": {},
         "errors": [],
+        "query_text": query_text,
+        "target_entity_id": target_entity_id,
+        "query_result": {},
         "stage": "initialized",
     }

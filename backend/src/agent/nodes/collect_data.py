@@ -45,14 +45,19 @@ def collect_data(state: WikiState) -> Dict[str, Any]:
 
     logger.info(f"Ingesting {len(files_to_process)} CSV files with chunk_size={chunk_size}, workers={max_workers}")
 
+    previous_hashes = state.get("previous_hashes")
+    reset_manifest = state.get("reset_manifest", False)
+
     # Run the Step 1 validated batch ingestion engine
     batch_result = execute_incremental_ingestion_batch(
         filenames=files_to_process,
         data_dir=data_dir,
         chunk_size=chunk_size,
         batch_id=batch_id,
+        previous_hashes=previous_hashes,
         max_workers=max_workers,
         persist_manifest=True,
+        reset_manifest=reset_manifest,
     )
 
     records_by_type = batch_result["records_by_type"]
